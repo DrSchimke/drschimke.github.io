@@ -11,6 +11,7 @@ permalink: /about/
 </div>
 
 My name is Sascha Schimke and I work in Berlin. My profession is software developer and software architect.
+
 In my previous life, I worked as computer scientist in a University to get my PhD.
 
 In 2013 I became an _OMG Certified UML Professional_ (OCUP2-F) and
