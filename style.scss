@@ -7,6 +7,9 @@
 
 @import "_reset";
 @import "_variables";
+
+@import url(http://fonts.googleapis.com/css?family=Indie+Flower|Open+Sans+Condensed:300|Open+Sans:400italic,400);
+
 // Syntax highlighting @import is at the bottom of this file
 
 /**************/
@@ -19,7 +22,7 @@ html {
 
 body {
 	background: $white;
-  font: 18px/1.4 $helvetica;
+  font: 18px/1.4 $fontText;
   color: $darkGray;
 }
 
@@ -31,9 +34,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: $helveticaNeue;
+  font-family: $fontTitle;
   color: $darkerGray;
-  font-weight: bold;
 
   line-height: 1.7;
   margin: 1em 0 15px;
@@ -121,9 +123,19 @@ img {
   font-size: smaller;
 }
 
-img.teaser {
-  width:50%;
+div.teaser {
+  width:40%;
   float: right;
+  font-style: italic;
+  font-family: $handwriting;
+  font-size: smaller;
+  color: $gray;
+  margin-left: 20px;
+}
+
+div.teaser img {
+  border-radius: 3px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
 }
 
 // Specify the color of the selection

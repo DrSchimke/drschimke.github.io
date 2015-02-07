@@ -2,19 +2,25 @@
 layout: default
 ---
 <article class="post">
-  <h1>{{ page.title }}</h1>
+    <h1>{{ page.title }}</h1>
 
-  <div class="by">
-      {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %},
-      {{ page.date | date: "%d.%m.%Y" }}
-  </div>
+    <div class="by">
+        {% if page.author %}{{ page.author }}{% else %}{{ site.author }}{% endif %},
+        {{ page.date | date: "%d.%m.%Y" }}
+    </div>
 
     <div class="entry">
         {% if page.image %}
-            <img class="teaser" src="/images/{{ page.image }}" />
-        {% endif %}
+        <div class="teaser">
+
+            <img src="/images/{{ page.image }}"/>
+            {% if page.caption %}
+            {{ page.caption }}
+            {% endif %}
+            {% endif %}
+        </div>
         {{ content }}
     </div>
 
-  {% include disqus.html disqus_identifier=page.disqus_identifier %}
+    {% include disqus.html disqus_identifier=page.disqus_identifier %}
 </article>
