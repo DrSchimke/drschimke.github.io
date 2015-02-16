@@ -2,9 +2,9 @@
 # This file contains configuration flags to customize your site
 #
 
-name: Schimke
+name: DrSchimke
 author: Sascha Schimke
-description: Software Developer/Architect
+description:
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: http://www.gravatar.com/avatar/63e3b9b25c5232fbad101d263354c94d.png
