@@ -125,6 +125,10 @@ article.post .entry p:last-child,
   font-family: $handwriting;
 }
 
+hw, .hw, [hw] {
+  font-family: $handwriting;
+}
+
 div.teaser {
   width:40%;
   float: right;
